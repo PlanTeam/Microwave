@@ -1,0 +1,9 @@
+[submodule "Dependencies/PlanTCP"]
+	path = Dependencies/PlanTCP
+	url = https://github.com/PlanTeam/PlanTCP
+[submodule "Dependencies/When"]
+	path = Dependencies/When
+	url = https://github.com/PlanTeam/When.git
+[submodule "Dependencies/CryptoSwift"]
+	path = Dependencies/CryptoSwift
+	url = https://github.com/krzyzanowskim/CryptoSwift.git

@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "489ED20C2ABCC8947260DA5AB6030650E3DF905B" : 0,
+    "30350A93821A0CB08C27995F4587C2B520F8EC6D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9635976C-1629-444A-BFF6-10650C2DF05E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "489ED20C2ABCC8947260DA5AB6030650E3DF905B" : "Microwave\/Dependencies\/PlanTCP\/",
+    "30350A93821A0CB08C27995F4587C2B520F8EC6D" : "Microwave\/Dependencies\/When\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Microwave",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Microwave.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PlanTeam\/When.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "30350A93821A0CB08C27995F4587C2B520F8EC6D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PlanTeam\/PlanTCP",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "489ED20C2ABCC8947260DA5AB6030650E3DF905B"
+    }
+  ]
+}
