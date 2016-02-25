@@ -40,8 +40,11 @@ class MicrowaveTests: XCTestCase {
             }
             
             print("Upgrading")
-            
+            do {
             try websocket.respondToUpgrade()
+            } catch {
+                print(error)
+            }
         }
         
         t.addHost(myHost)

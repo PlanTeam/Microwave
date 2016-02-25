@@ -146,19 +146,19 @@ public struct WebSocketFrame {
         var firstByte: UInt8 = 0b00000000
         
         if finalFragment {
-            firstByte |= 0b00000001
+            firstByte |= 0b10000000
         }
         
         if rsv1 {
-            firstByte |= 0b00000010
+            firstByte |= 0b01000000
         }
         
         if rsv2 {
-            firstByte |= 0b00000100
+            firstByte |= 0b00100000
         }
         
         if rsv3 {
-            firstByte |= 0b00001000
+            firstByte |= 0b00010000
         }
         
         firstByte |= opcode.rawValue
@@ -206,6 +206,7 @@ public struct WebSocketFrame {
             data += payload
         }
         
+//        return [0x81, 0x05, 0x48, 0x65, 0x6c, 0x6c, 0x6f]
         return data
     }
 }

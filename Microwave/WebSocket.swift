@@ -41,7 +41,7 @@ public class WebSocketClient {
     public func respond(data: [UInt8]) throws {
         var frame = WebSocketFrame(withPayload: data, opcode: .Text)
         
-        try client.context.respond(try frame.getBytes())
+        try client.context.respond(try frame.getBytes(), autoClose: false)
     }
     
     // TODO: Validate Origin
@@ -98,7 +98,9 @@ public class WebSocketClient {
         responseString += "\r\n"
         var responseData = [UInt8]()
         responseData.appendContentsOf(responseString.utf8)
-        try !>client.context.convertToWebsocket(client: self)
+        _ = client.context.convertToWebsocket(client: self).onError { _ in
+            print("Error receiving data")
+        }
         
         try client.context.respond(responseData, autoClose: false)
     }
